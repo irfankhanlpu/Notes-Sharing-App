@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="login_form.show_data3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:login_form"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollMode="Auto"
+                  ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollMode="Auto">
+
+        <StackPanel >
+            <StackPanel Orientation="Horizontal">
+            <Button x:Name="rt3" Content="Show the total number of feedback" Width="300" Margin="30 20 20 20" FontSize="20" Background="Red" Click="rt3_Click"/>
+            <Button x:Name="rt4" Content="back" Width="300" Margin="30 20 20 20" FontSize="20" Background="Red" Click="rt4_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="t1" TextWrapping="Wrap" Text="" Height="957" Width="350" Margin="69,0,1,0"/>
+                <TextBlock x:Name="t2" TextWrapping="Wrap" Text="" Height="938" Width="400" Margin="20,0,0,0"/>
+                <TextBlock x:Name="t3" TextWrapping="Wrap" Text="" Height="940" Width="400" Margin="20,0,0,0"/>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

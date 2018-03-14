@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="login_form.TERM_CONDITION"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:login_form"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Background="Red">
+        <RelativePanel>
+        </RelativePanel>
+        <ScrollViewer>
+            
+            <StackPanel Orientation="Vertical" Margin="0 30 0 0">
+                <Button Name="BACK" Content="BACK" Click="BACK_Click"/>
+                <TextBlock Text="TERMS AND CONDITIONS" FontSize="30" TextAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+
+                <TextBlock Text="NOTICE" FontSize="25"></TextBlock>
+
+
+                <TextBlock FontSize="20" Foreground="WHITE" Text="Data Usage/Mobile Operator. When you use the Deliverables, you may incur charges with your mobile operator related to voice, Internet access, data transfer and other services per the terms of the data service plan and any other agreements you have with your mobile operator. You are solely responsible for all of these charges. Your mobile operator may also have specific terms and conditions, terms of use, and privacy policies that you must comply with. The Windows Phone may also automatically check for updates and updates may install automatically on the Windows Phone via the Windows Phone Update technology in the Windows Phone software. If your Windows Phone is network certified you can control usage of cellular data from the cellular data settings found in general phone settings.
+Non-Commercial Quality. The Deliverables may be prerelease and may not be compatible or work as well as a commercial, retail offering. The Deliverables may not work correctly and are not intended as a substitute for your primary means of telecommunications.
+Registry key/Data collection.
+                       The Windows Phone Preview for Developers app will set a registry key on your Windows Phone to enable the app to preview updates. Microsoft will not collect information about your Windows Phone through the app." TextWrapping="Wrap"></TextBlock>
+                <TextBlock Text="License Grant" FontSize="25"/>
+                <TextBlock FontSize="20" Foreground="White" Text="License to Deliverables. Microsoft grants to you a nonexclusive, royalty-free, personal, nontransferable license to use the Deliverables solely for:
+Installation on a Windows Phone owned by you, including any updates;
+Evaluating and testing the Deliverables;
+Designing, developing, or testing your hardware, software and/or service product offering(s) solely in connection with the Windows Phone; and
+Providing feedback to Microsoft.
+License Limitations and Reservation of rights. This Agreement grants you a license to use the Deliverables as provided for in Section 3(a). Microsoft does not intend to sell or otherwise transfer the Deliverables, or any intellectual property rights in the Deliverables, to you. Except as expressly licensed under Section 3(a), Microsoft and its licensors retain all of their right, title and interest in and to the Deliverables, and no other intellectual property rights or license rights are granted to you, either expressly or by implication, estoppel or otherwise.
+License limitations. Except as expressly provided in this Agreement or as permitted by law, you will not, and will not permit or authorize third parties to:
+Reproduce, modify, translate, enhance, decompile, disassemble, reverse engineer, or create derivative works of the Deliverables;
+Sell, rent, lease, or otherwise place the Deliverables into any channel of commerce;
+Sublicense the Deliverables; or
+Provide, make available to, or permit the use of the Deliverables by any third party that is not your employee or a contractor except with written permission by Microsoft and subject to the terms in Section 7 of this Agreement.
+Third-Party Software. The Deliverables may contain third party software and its updates, Your use of this Third-Party Software may be subject to separate license agreements containing additional terms and conditions . In addition to the terms and conditions in this Agreement, you agree to comply with these Third Party Software License Agreements when you use the Third Party Software.
+Additional Terms. You may be prompted to accept additional contract terms that govern your installation and use of other software or services offered in connection with the Windows Phone. These contract terms are separate from and do not change or replace the terms of this Agreement" TextWrapping="Wrap"></TextBlock>
+            </StackPanel>
+
+
+        </ScrollViewer>
+
+    </Grid>
+
+</Page>

@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{EAF99630-9FF8-4376-A590-2F099C8799CB}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>login_form</RootNamespace>
+    <AssemblyName>login_form</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>login_form_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="3.jpg" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\ACCOUNT.jpg" />
+    <Content Include="Assets\aircraft.jpg" />
+    <Content Include="Assets\aptitude.jpg" />
+    <Content Include="Assets\arc.jpg" />
+    <Content Include="Assets\arg.jpg" />
+    <Content Include="Assets\audit.jpg" />
+    <Content Include="Assets\automobile.jpg" />
+    <Content Include="Assets\b.tech.jpg" />
+    <Content Include="Assets\background1.jpg" />
+    <Content Include="Assets\background2.jpg" />
+    <Content Include="Assets\background3.jpg" />
+    <Content Include="Assets\background4.jpg" />
+    <Content Include="Assets\bcom.jpg" />
+    <Content Include="Assets\bio.jpg" />
+    <Content Include="Assets\biology.jpg" />
+    <Content Include="Assets\biostatic.jpg" />
+    <Content Include="Assets\botany.jpg" />
+    <Content Include="Assets\bsc.jpg" />
+    <Content Include="Assets\c++.jpg" />
+    <Content Include="Assets\c.jpg" />
+    <Content Include="Assets\ca.jpg" />
+    <Content Include="Assets\chem.jpg" />
+    <Content Include="Assets\chemistry.jpg" />
+    <Content Include="Assets\civil.png" />
+    <Content Include="Assets\cod.jpg" />
+    <Content Include="Assets\cpp.jpg" />
+    <Content Include="Assets\cs.jpg" />
+    <Content Include="Assets\database.JPG" />
+    <Content Include="Assets\di.jpg" />
+    <Content Include="Assets\dsa.jpg" />
+    <Content Include="Assets\ece.jpg" />
+    <Content Include="Assets\economics.jpg" />
+    <Content Include="Assets\ed.jpg" />
+    <Content Include="Assets\el.jpg" />
+    <Content Include="Assets\electrical.jpg" />
+    <Content Include="Assets\engeenearing design.jpg" />
+    <Content Include="Assets\fb.png" />
+    <Content Include="Assets\feedback.jpg" />
+    <Content Include="Assets\finance.jpg" />
+    <Content Include="Assets\FOOD.jpg" />
+    <Content Include="Assets\gmail.png" />
+    <Content Include="Assets\HA.jpg" />
+    <Content Include="Assets\HA1.jpg" />
+    <Content Include="Assets\hd1.jpg" />
+    <Content Include="Assets\hd10.jpg" />
+    <Content Include="Assets\hd11.jpg" />
+    <Content Include="Assets\hd2.jpg" />
+    <Content Include="Assets\hd3.jpg" />
+    <Content Include="Assets\HI.jpg" />
+    <Content Include="Assets\hm.jpg" />
+    <Content Include="Assets\horse_bg.jpg" />
+    <Content Include="Assets\hotal.jpg" />
+    <Content Include="Assets\html.jpg" />
+    <Content Include="Assets\i1.jpg" />
+    <Content Include="Assets\ias.jpg" />
+    <Content Include="Assets\income tax.jpg" />
+    <Content Include="Assets\law.jpg" />
+    <Content Include="Assets\linux.jpg" />
+    <Content Include="Assets\MAC.jpg" />
+    <Content Include="Assets\mainpage_bg.png" />
+    <Content Include="Assets\math.jpg" />
+    <Content Include="Assets\mba.jpg" />
+    <Content Include="Assets\me.jpg" />
+    <Content Include="Assets\mechanical.jpg" />
+    <Content Include="Assets\metal.jpg" />
+    <Content Include="Assets\nda.jpg" />
+    <Content Include="Assets\network.jpg" />
+    <Content Include="Assets\pathology.jpg" />
+    <Content Include="Assets\physics.jpg" />
+    <Content Include="Assets\pse.jpg" />
+    <Content Include="Assets\quantum mechanics.jpg" />
+    <Content Include="Assets\stra.jpg" />
+    <Content Include="Assets\surv.jpg" />
+    <Content Include="Assets\thermo.jpg" />
+    <Content Include="Assets\upse.jpg" />
+    <Content Include="Assets\verbal.jpg" />
+    <Content Include="Assets\wall5.jpg" />
+    <Content Include="Assets\wl.jpg" />
+    <Content Include="Assets\zoology.jpg" />
+    <Content Include="fb.png" />
+    <Content Include="gmail.png" />
+    <Content Include="notes.jpg" />
+    <Content Include="wl.jpg" />
+    <Content Include="y.jpg" />
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about_us.xaml.cs">
+      <DependentUpon>about_us.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.xaml.cs">
+      <DependentUpon>admin_login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="arc_courses.xaml.cs">
+      <DependentUpon>arc_courses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\down_show_data.xaml.cs">
+      <DependentUpon>down_show_data.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="b.xaml.cs">
+      <DependentUpon>b.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bcome_courses.xaml.cs">
+      <DependentUpon>bcome_courses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bse.xaml.cs">
+      <DependentUpon>bse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="b_tech.xaml.cs">
+      <DependentUpon>b_tech.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="civil_courses.xaml.cs">
+      <DependentUpon>civil_courses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="cse_courses.xaml.cs">
+      <DependentUpon>cse_courses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="downlaod.xaml.cs">
+      <DependentUpon>downlaod.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DOWN_UPLOAD.xaml.cs">
+      <DependentUpon>DOWN_UPLOAD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ece_courses.xaml.cs">
+      <DependentUpon>ece_courses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.xaml.cs">
+      <DependentUpon>feedback.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="home.xaml.cs">
+      <DependentUpon>home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="hotal_courses.xaml.cs">
+      <DependentUpon>hotal_courses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="login.xaml.cs">
+      <DependentUpon>login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mech_cources.xaml.cs">
+      <DependentUpon>mech_cources.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="show_data.xaml.cs">
+      <DependentUpon>show_data.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="show_data2.xaml.cs">
+      <DependentUpon>show_data2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="show_data3.xaml.cs">
+      <DependentUpon>show_data3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sign_up.xaml.cs">
+      <DependentUpon>sign_up.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sub_notes.xaml.cs">
+      <DependentUpon>sub_notes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sub_notes2.xaml.cs">
+      <DependentUpon>sub_notes2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TERM_CONDITION.xaml.cs">
+      <DependentUpon>TERM_CONDITION.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="upload_link.xaml.cs">
+      <DependentUpon>upload_link.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="login_form_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bg.jpg" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="about_us.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="admin_login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="arc_courses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\down_show_data.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="b.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="bcome_courses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="bse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="b_tech.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="civil_courses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="cse_courses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="downlaod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="down_show_data.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DOWN_UPLOAD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ece_courses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="feedback.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="hotal_courses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="mech_cources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="show_data.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="show_data2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="show_data3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="signup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sign_up.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sub_notes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sub_notes2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TERM_CONDITION.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="upload_link.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="SQLite.UWP.2015, Version=3.16.2">
+      <Name>SQLite for Universal Windows Platform</Name>
+    </SDKReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

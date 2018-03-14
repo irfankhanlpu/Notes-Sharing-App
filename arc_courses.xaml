@@ -1,0 +1,335 @@
+﻿<Page
+    x:Class="login_form.arc_courses"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:login_form"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollMode="Auto"
+                  ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollMode="Auto">
+
+        <Grid Background="SkyBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="Assets\ed.jpg" Height="420"/>
+            <Image Source="Assets\surv.jpg" Height="420" Grid.Column="2"/>
+
+            <Image Source="Assets\stra.jpg" Height="420"  Grid.Column="3"/>
+            <Image Source="Assets\arg.jpg" Grid.Column="1" Height="430"/>
+            <TextBlock Name="header" Text="LIST OF COURSES OF ARCHITECTURE ENGEENEARING" FontSize="40" Foreground="Red" Grid.ColumnSpan="4" TextAlignment="Center"/>
+            <Button Name="back" Content="back" Click="back_Click" Margin="20 -650 20 20" Background="Red" Width="100"/>
+
+            <Button Name="btnClick"  Content="Engg. Drawing"   FontSize="30" Margin="10,83,0,574" Background="Red" Foreground="Wheat" Click="btnClick_Click" Width="300" Height="63" />
+            <SplitView Name="myView" RelativePanel.Below="btnClick" DisplayMode="Overlay" HorizontalAlignment="Left" Margin="20 80 0 14" CompactPaneLength="50" OpenPaneLength="300">
+                <SplitView.Pane >
+                    <StackPanel Orientation="Vertical"  >
+                        <ListBox  SelectionChanged="ListBox_SelectionChanged" >
+
+                            <ListBoxItem Name="listitemone"  >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s1" Text="Introduction to ED" Height="40"  Width="250"  FontSize="22" Margin="10,-10,-60,-10"   ></TextBlock>
+                                    <HyperlinkButton Name="ha" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hb" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+
+
+
+
+                            </ListBoxItem>
+
+                            <ListBoxItem Name="listitemtwo" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s2" Text="Drawing Equip" Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="hc" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hd" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemthree" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s3" Text="Lettering and Lines" Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="he" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hf" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfour" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s4" Text="Geometric Cons." Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="hg" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hh" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfive" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s5" Text="Projection" Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="hi" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hj" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemsix" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s6" Text="Sectioning" Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="hk" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hl" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemseven" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s7" Text="Maping" Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="hm" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hn" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeight" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s8" Text="Dimensioning" Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="ho" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hp" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemnine" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s9" Text="Building Drawing" Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="hq" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hr" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemten" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s10" Text="Appli. of drawing" Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="hs" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="ht" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeleven" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s11" Text="projection of point" Height="40" Width="250"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <HyperlinkButton Name="hu" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ"/>
+                                    <HyperlinkButton Name="hv" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" NavigateUri="https://drive.google.com/open?id=0B7ZrINMwOTAzck9KY3BzUHRzVzQ" Margin="20 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemtwel" >
+
+                                <HyperlinkButton Name="s12" Content="Download Full notes" Background="Green" Width="250"  Foreground="Red" Margin="20 -10 0 -10" FontSize="20" ></HyperlinkButton>
+                            </ListBoxItem>
+
+                        </ListBox>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Name="txtShowDataOnClickOfListItems" Text="" Margin="10 800 20 20"></TextBlock>
+                </SplitView.Content>
+            </SplitView>
+
+            <Button Name="btnClick1" Content="Arch.Graphics" Grid.Column="1"  FontSize="30" Margin="5,83,0,574" Background="Red" Foreground="Wheat" Click="btnClick1_Click" Width="350" Height="63" />
+            <SplitView Name="myView1" Grid.Column="1"  DisplayMode="Overlay" HorizontalAlignment="Left" Margin="20 80 0 14" CompactPaneLength="50" OpenPaneLength="300">
+                <SplitView.Pane >
+                    <StackPanel Orientation="Vertical"   >
+                        <ListBox  SelectionChanged="ListBox_SelectionChanged_1" >
+
+                            <ListBoxItem Name="listitemone1"  >
+
+                                <Button Name="ss" Content="DRAWING TOOLS" Height="40"  Width="250"  FontSize="20" Margin="20,-10,0,-10" Click="ss_Click"  ></Button>
+
+
+                            </ListBoxItem>
+
+                            <ListBoxItem Name="listitemtwo1" >
+
+                                <Button Name="ss2" Content="ARCHITECTURE DRAFTING" Height="40" Width="250"  Click="ss2_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemthree1" >
+
+                                <Button Name="ss3" Width="250" Content="ARCHITECTURE DRAWING" Height="40" Click="ss3_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfour1" >
+                                <Button Name="ss4" Width="250" Content="MULTIVIEW DRAWING" Height="40" Click="ss4_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfive1" >
+
+                                <Button Name="ss5" Width="250" Content="PARALINE DRAWING" Height="40" Click="ss5_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemsix1" >
+                                <Button Name="ss6" Content="PERSPECTIVE DRAWING" Width="250" Click="ss6_Click" Height="40" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemseven1" >
+                                <Button Name="ss7" Content="RANDERING VAKUE" Width="250" Click="ss7_Click" Height="40" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeight1" >
+                                <Button Name="ss8" Content="RANDERING CONTEXT" Width="250" Click="ss8_Click" Height="40" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemnine1" >
+                                <Button Name="ss9" Content="FREEHAND DRAWING" Width="250" Click="ss9_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemten1" >
+                                <Button Name="ss10" Content="ARC.PRESENTATION" Width="250" Click="ss10_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeleven1" >
+                                <Button Name="ss11" Content="DRAWING MATERIAL" Width="250" Click="btnClick_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemtwel1" >
+                                <HyperlinkButton Name="s13" Content="Download Full notes" Background="Green" Width="250"  Foreground="Red" Margin="20 -10 0 -10" FontSize="20" ></HyperlinkButton>
+                            </ListBoxItem>
+
+                        </ListBox>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Name="txtShowDataOnClickOfListItems1" Text="" Margin="10 800 20 20"></TextBlock>
+                </SplitView.Content>
+            </SplitView>
+
+
+            <Button Name="btnClick2" Content="Surveying" Grid.Column="2"  FontSize="30" Margin="5,83,0,574" Background="Red" Foreground="Wheat" Click="btnClick2_Click_1" Width="314" Height="63" />
+            <SplitView Name="myView2" Grid.Column="2"  DisplayMode="Overlay" HorizontalAlignment="Left" Margin="20 80 0 14" CompactPaneLength="50" OpenPaneLength="300">
+                <SplitView.Pane >
+                    <StackPanel Orientation="Vertical"   >
+                        <ListBox  SelectionChanged="ListBox_SelectionChanged_3" >
+
+                            <ListBoxItem Name="listitemone1_3"  >
+
+                                <Button Name="sss" Content="THEODOLITE " Height="40"  Width="250"  FontSize="20" Margin="20,-10,0,-10" Click="sss_Click"  ></Button>
+
+
+                            </ListBoxItem>
+
+                            <ListBoxItem Name="listitemtwo_3" >
+
+                                <Button Name="sss2" Content="TRAVERSING" Height="40" Width="250"  Click="sss2_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemthree_3" >
+
+                                <Button Name="sss3" Width="250" Content="TACHEOMETRY" Height="40" Click="sss3_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfour_3" >
+                                <Button Name="sss4" Width="250" Content="CURVES" Height="40" Click="sss4_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfive_3" >
+
+                                <Button Name="sss5" Width="250" Content="ADVANCED SURVEYING" Height="40" Click="sss5_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemsix_3" >
+                                <Button Name="sss6" Content="Precision and accuracy" Width="250" Click="sss6_Click" Height="40" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemseven_3" >
+                                <Button Name="sss7" Content="Communication" Width="250" Click="sss7_Click" Height="40" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeight_3" >
+                                <Button Name="sss8" Content="Fundamental of survaying " Width="250" Click="sss8_Click" Height="40" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemnine_3" >
+                                <Button Name="sss9" Content=" surveying equipement" Width="250" Click="sss9_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemten_3" >
+                                <Button Name="sss10" Content="Surveying procedures" Width="250" Click="sss10_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeleven_3" >
+                                <Button Name="sss11" Content="Transverse Surveys" Width="250" Click="sss11_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemtwel_3" >
+                                <HyperlinkButton Name="sss12" Content="Download Full notes" Background="Green" Width="250"  Foreground="Red" Margin="20 -10 0 -10" FontSize="20" ></HyperlinkButton>
+                            </ListBoxItem>
+
+                        </ListBox>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Name="txtShowDataOnClickOfListItems2" Text="Content yet to be displayed" Margin="10 800 20 20"></TextBlock>
+                </SplitView.Content>
+            </SplitView>
+
+
+
+
+            <Button Name="btnClick3" Content="Structural analysis " Grid.Column="3"  FontSize="30" Margin="20,83,0,574" Background="Red" Foreground="Wheat" Click="btnClick3_Click" Width="281" Height="63" />
+            <SplitView Name="myView3" Grid.Column="3"  DisplayMode="Overlay" HorizontalAlignment="Left" Margin="20 80 0 14" CompactPaneLength="50" OpenPaneLength="300">
+                <SplitView.Pane >
+                    <StackPanel Orientation="Vertical"   >
+                        <ListBox  SelectionChanged="ListBox_SelectionChanged_4" >
+
+                            <ListBoxItem Name="listitemone1_4"  >
+
+                                <Button Name="ssss" Content="Classification of structure" Height="40"  Width="250"  FontSize="20" Margin="20,-10,0,-10" Click="sss_Click"  ></Button>
+
+
+                            </ListBoxItem>
+
+                            <ListBoxItem Name="listitemtwo_4" >
+
+                                <Button Name="ssss2" Content="Static Equilibrium" Height="40" Width="250"  Click="ssss2_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemthree_4" >
+
+                                <Button Name="ssss3" Width="250" Content="Static Indeterminacy" Height="40" Click="ssss3_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfour_4" >
+                                <Button Name="ssss4" Width="250" Content="Kinematic Indeterminacy " Height="40" Click="ssss4_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfive_4" >
+
+                                <Button Name="ssss5" Width="250" Content="Kinematically Structure " Height="40" Click="ssss5_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemsix_4" >
+                                <Button Name="ssss6" Content="Compatibility Equations " Width="250" Click="ssss6_Click" Height="40" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemseven_4" >
+                                <Button Name="ssss7" Content="Force-Displacement Relationship " Width="250" Click="ssss7_Click" Height="40" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeight_4" >
+                                <Button Name="ssss8" Content="Greedy Technique " Width="250" Click="ssss8_Click" Height="40" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemnine_4" >
+                                <Button Name="ssss9" Content="Iterative improvement" Width="250" Click="ssss9_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemten_4" >
+                                <Button Name="ssss10" Content="Sortest path" Width="250" Click="ssss10_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeleven_4" >
+                                <Button Name="ssss11" Content="analysis of structure" Width="250" Click="ssss11_Click" Margin="20 -10 0 -10" FontSize="20" ></Button>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemtwel_4" >
+                                <HyperlinkButton Name="ssss12" Content="Downloads Full Notes" Background="Green" Width="250"  Foreground="Red" Margin="20 -10 0 -10" FontSize="20" ></HyperlinkButton>
+                            </ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Name="txtShowDataOnClickOfListItems3" Text="Content yet to be displayed" Margin="10 800 20 20"></TextBlock>
+                </SplitView.Content>
+            </SplitView>
+
+
+        </Grid>
+    </ScrollViewer>
+</Page>

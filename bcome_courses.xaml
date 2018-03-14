@@ -1,0 +1,474 @@
+﻿<Page
+    x:Class="login_form.bcome_courses"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:login_form"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+  
+    <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollMode="Auto"
+                  ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollMode="Auto">
+
+        <Grid Background="SkyBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Image Source="Assets\account.jpg" Height="420"/>
+            <Image Source="Assets\LAW.jpg" Height="420" Grid.Column="2"/>
+
+            <Image Source="Assets\AUDIT.jpg" Height="420"  Grid.Column="3"/>
+            <Image Source="Assets\economics.jpg" Grid.Column="1" Height="420"/>
+            <TextBlock Name="header" Text="LIST OF COURSES OF B.com" FontSize="40" Foreground="Red" Grid.ColumnSpan="4" TextAlignment="Center" Margin="10 10 10 10"/>
+            <Button Name="back" Content="back" Click="back_Click" Margin="20 -650 20 20" Background="Red" Width="100"/>
+
+            <Button Name="btnClick"  Content="ACCOUNT"   FontSize="30" Margin="10,83,0,574"  Background="Red" Foreground="Wheat" Click="btnClick_Click" Width="320" Height="63" />
+            <SplitView Name="myView" RelativePanel.Below="btnClick" DisplayMode="Overlay" HorizontalAlignment="Left" Margin="20 80 0 14" CompactPaneLength="50" OpenPaneLength="300">
+                <SplitView.Pane >
+                    <StackPanel Orientation="Vertical"  >
+                        <ListBox  SelectionChanged="ListBox_SelectionChanged" >
+
+                            <ListBoxItem Name="listitemone"  >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s1" Text="INTO TO ACCOUNT" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ha" Content="" FontFamily="segoe mdl2 assets"  Foreground="Black" Click="ha_Click"/>
+                                    <Button Name="hb" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hb_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+
+                            <ListBoxItem Name="listitemtwo" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s2" Text="ACCOUNTING EQU." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="hc" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hc_Click"/>
+                                    <Button Name="hd" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hd_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemthree" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s3" Text="HIGHER PURCHASE" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="he" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="he_Click"/>
+                                    <Button Name="hf" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hf_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfour" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s4" Text="BANKING" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="hg" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hg_Click"/>
+                                    <Button Name="hh" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hh_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfive" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s5" Text="N.P.O" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="hi" Content="" FontFamily="segoe mdl2 assets" Click="hi_Click" Foreground="Black" />
+                                    <Button Name="hj" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hj_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemsix" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s6" Text="COST SHEET" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="hk" Content="" FontFamily="segoe mdl2 assets" Click="hk_Click" Foreground="Black" />
+                                    <Button Name="hl" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hl_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemseven" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s7" Text="MATERIAL COST" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="hm" Content="" FontFamily="segoe mdl2 assets" Click="hm_Click" Foreground="Black" />
+                                    <Button Name="hn" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hn_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeight" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s8" Text="OVERHEAD COST" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ho" Content="" FontFamily="segoe mdl2 assets" Click="ho_Click" Foreground="Black" />
+                                    <Button Name="hp" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hp_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemnine" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s9" Text="STANDARD COST" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="hq" Content="" FontFamily="segoe mdl2 assets" Click="hq_Click" Foreground="Black" />
+                                    <Button Name="hr" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="hr_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemten" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="s10" Text="MARGINAL COST" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="hs" Content="" FontFamily="segoe mdl2 assets" Click="hs_Click" Foreground="Black" />
+                                    <Button Name="ht" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="ht_Click"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                           
+                            <ListBoxItem Name="listitemtwel" >
+                            </ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Name="txtShowDataOnClickOfListItems" Text="Content yet to be displayed" Margin="10 800 20 20"></TextBlock>
+                </SplitView.Content>
+            </SplitView>
+
+            <Button Name="btnClick1" Content="ECONOMICS" Grid.Column="1"  FontSize="30" Margin="0,83,0,574" Background="Red" Foreground="Wheat" Click="btnClick1_Click" Width="330" Height="63" />
+            <SplitView Name="myView1" Grid.Column="1"  DisplayMode="Overlay" HorizontalAlignment="Left" Margin="20 80 0 14" CompactPaneLength="50" OpenPaneLength="300">
+                <SplitView.Pane >
+                    <StackPanel Orientation="Vertical"   >
+                        <ListBox  SelectionChanged="ListBox_SelectionChanged_1" >
+
+                            <ListBoxItem Name="listitemone1"  >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss" Text="MICRO ECONOM." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ia" Content="" FontFamily="segoe mdl2 assets" Click="ia_Click" Foreground="Black" />
+                                    <Button Name="ib" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="ib_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+
+                            <ListBoxItem Name="listitemtwo1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss2" Text="MACRO ECO." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ic" Content="" FontFamily="segoe mdl2 assets" Click="ic_Click" Foreground="Black" />
+                                    <Button Name="id" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="id_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemthree1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss3" Text="NATIONAL INCOME" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ie" Content="" FontFamily="segoe mdl2 assets" Click="ie_Click" Foreground="Black" />
+                                    <Button Name="iff" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="iff_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfour1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss4" Text="MONEY" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ig" Content="" FontFamily="segoe mdl2 assets" Click="ig_Click" Foreground="Black" />
+                                    <Button Name="ih" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="ih_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfive1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss5" Text="BALANCE OF PAYM." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ii" Content="" FontFamily="segoe mdl2 assets" Click="ii_Click" Foreground="Black"/>
+                                    <Button Name="ij" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="ij_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemsix1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss6" Text="FORIIGN MARKET" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ik" Content="" FontFamily="segoe mdl2 assets" Click="ik_Click" Foreground="Black" />
+                                    <Button Name="il" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="il_Click"  Margin="0 0 0 0"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemseven1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss7" Text="CONSUMPTION" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="im" Content="" FontFamily="segoe mdl2 assets" Click="im_Click" Foreground="Black" />
+                                    <Button Name="inn" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="inn_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeight1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss8" Text="INDIFF CURVE" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="io" Content="" FontFamily="segoe mdl2 assets" Click="io_Click" Foreground="Black" />
+                                    <Button Name="ip" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="ip_Click"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemnine1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss9" Text="REVENUE" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="iq" Content="" FontFamily="segoe mdl2 assets " Click="iq_Click" Foreground="Black" />
+                                    <Button Name="ir" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="ir_Click"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemten1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss10" Text="SUPPLY" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="iss" Content="" FontFamily="segoe mdl2 assets" Click="iss_Click" Foreground="Black" />
+                                    <Button Name="it" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="it_Click"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeleven1" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ss11" Text="DEMAND THEORY" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="iu" Content="" FontFamily="segoe mdl2 assets" Click="iu_Click" Foreground="Black" />
+                                    <Button Name="iv" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="iv_Click"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemtwel1" >
+                            </ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Name="txtShowDataOnClickOfListItems1" Text="Content yet to be displayed" Margin="10 800 20 20"></TextBlock>
+                </SplitView.Content>
+            </SplitView>
+
+
+            <Button Name="btnClick2" Content="BUSINESS LAW" Grid.Column="2"  FontSize="30" Margin="0,83,0,574" Background="Red" Foreground="Wheat" Click="btnClick2_Click_1" Width="330" Height="63" />
+            <SplitView Name="myView2" Grid.Column="2"  DisplayMode="Overlay" HorizontalAlignment="Left" Margin="20 80 0 14" CompactPaneLength="50" OpenPaneLength="300">
+                <SplitView.Pane >
+                    <StackPanel Orientation="Vertical"   >
+                        <ListBox  SelectionChanged="ListBox_SelectionChanged_3" >
+
+                            <ListBoxItem Name="listitemone1_3"  >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss" Text="SPECIAL CONTR." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ja" Content="" FontFamily="segoe mdl2 assets" Click="ja_Click" Foreground="Black" />
+                                    <Button Name="jb" Content="" FontFamily="segoe mdl2 assets" Click="jb_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+
+                            <ListBoxItem Name="listitemtwo_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss2" Text="LAW INSOLVENCY" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="jc" Content="" FontFamily="segoe mdl2 assets" Click="jc_Click" Foreground="Black" />
+                                    <Button Name="jd" Content="" FontFamily="segoe mdl2 assets" Click="jd_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemthree_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss3" Text="COMPANY LAW" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="je" Content="" Click="je_Click" FontFamily="segoe mdl2 assets"  Foreground="Black" />
+                                    <Button Name="jf" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jf_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfour_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss4" Text="INDUSTRIAL LAW " Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="jg" Content="" Click="jg_Click" FontFamily="segoe mdl2 assets" Foreground="Black" />
+                                    <Button Name="jh" Content="" Click="jh_Click" FontFamily="segoe mdl2 assets" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfive_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss5" Text="DISCHARGE CONTR." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ji" Content="" FontFamily="segoe mdl2 assets" Click="ji_Click" Foreground="Black" />
+                                    <Button Name="jj" Content="" FontFamily="segoe mdl2 assets" Click="jj_Click" Foreground="Black" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemsix_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss6" Text="QUASI CONTRACT" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="jk" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jk_Click"/>
+                                    <Button Name="jl" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jl_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemseven_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss7" Text="PROSPECTUS" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="jm" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jm_Click"/>
+                                    <Button Name="jn" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jn_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeight_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss8" Text="DISCHARGE INSOL." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="jo" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jo_Click"/>
+                                    <Button Name="jp" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jp_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemnine_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss9" Text="PAY BONUS ACT" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="jq" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jq_Click" />
+                                    <Button Name="jr" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jr_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemten_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss10" Text="WINDING COMP." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="js" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="js_Click" />
+                                    <Button Name="jt" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jt_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeleven_3" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="sss11" Text="LIFE INSURANCE" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ju" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="ju_Click"/>
+                                    <Button Name="jv" Content="" FontFamily="segoe mdl2 assets" Foreground="Black" Click="jv_Click" Margin="0 0 0 0"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemtwel_3" >
+                            </ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Name="txtShowDataOnClickOfListItems2" Text="Content yet to be displayed" Margin="10 800 20 20"></TextBlock>
+                </SplitView.Content>
+            </SplitView>
+
+
+
+
+            <Button Name="btnClick3" Content="AUDIT" Grid.Column="3"  FontSize="30" Margin="0,83,0,574" Background="Red" Foreground="Wheat" Click="btnClick3_Click" Width="320" Height="63" />
+            <SplitView Name="myView3" Grid.Column="3"  DisplayMode="Overlay" HorizontalAlignment="Left" Margin="20 80 0 14" CompactPaneLength="50" OpenPaneLength="300">
+                <SplitView.Pane >
+                    <StackPanel Orientation="Vertical"   >
+                        <ListBox  SelectionChanged="ListBox_SelectionChanged_4" >
+
+                            <ListBoxItem Name="listitemone1_4"  >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss" Text="AUDITING CONC." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ka" Content="" Click="ka_Click" FontFamily="segoe mdl2 assets" Foreground="Black" />
+                                    <Button Name="kb" Content="" Click="kb_Click" FontFamily="segoe mdl2 assets" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+
+                            <ListBoxItem Name="listitemtwo_4" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss2" Text="TYPE OF COMPANY" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="kc" Content=""  FontFamily="segoe mdl2 assets" Click="kc_Click" Foreground="Black" />
+                                    <Button Name="kd" Content=""  FontFamily="segoe mdl2 assets" Click="kd_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemthree_4" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss3" Text="INTERNAL AUDIT" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ke" Content=""  FontFamily="segoe mdl2 assets" Click="ke_Click" Foreground="Black" />
+                                    <Button Name="kf" Content=""  FontFamily="segoe mdl2 assets" Click="kf_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfour_4" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss4" Text="INTERNAL CONTRL" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="kg" Content=""  FontFamily="segoe mdl2 assets" Click="kg_Click" Foreground="Black" />
+                                    <Button Name="kh" Content=""  FontFamily="segoe mdl2 assets" Click="kh_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemfive_4" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss5" Text="REVIEW OF I.C" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ki" Content=""  FontFamily="segoe mdl2 assets" Click="ki_Click" Foreground="Black" />
+                                    <Button Name="kj" Content=""  FontFamily="segoe mdl2 assets" Click="kj_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemsix_4" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss6" Text="AUDIT ENGAGE." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="kk" Content=""  FontFamily="segoe mdl2 assets" Click="kk_Click" Foreground="Black" />
+                                    <Button Name="kl" Content=""  FontFamily="segoe mdl2 assets" Click="kl_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemseven_4" >
+
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss7" Text="AUDIT DOCUM." Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="km" Content=""  FontFamily="segoe mdl2 assets" Click="km_Click" Foreground="Black" />
+                                    <Button Name="kn" Content=""  FontFamily="segoe mdl2 assets" Click="kn_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeight_4" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss8" Text="SAMPLING" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ko" Content=""  FontFamily="segoe mdl2 assets" Click="ko_Click" Foreground="Black" />
+                                    <Button Name="kp" Content=""  FontFamily="segoe mdl2 assets" Click="kp_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemnine_4" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss9" Text="JOINT AUDIT" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="kq" Content=""  FontFamily="segoe mdl2 assets" Click="kq_Click" Foreground="Black" />
+                                    <Button Name="kr" Content=""  FontFamily="segoe mdl2 assets" Click="kr_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemten_4" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss10" Text="FORMS OF AUDIT" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ks" Content=""  FontFamily="segoe mdl2 assets" Click="ks_Click" Foreground="Black" />
+                                    <Button Name="kt" Content=""  FontFamily="segoe mdl2 assets" Click="kt_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemeleven_4" >
+                                <StackPanel Orientation="Horizontal" Background="LightGray" Margin="20 0 0 0" Width="257">
+                                    <TextBlock Name="ssss11" Text="AUDIT TESTING" Height="40" Width="240"  Margin="10,-10,-60,-10" FontSize="22" ></TextBlock>
+                                    <Button Name="ku" Content=""  FontFamily="segoe mdl2 assets" Click="ku_Click" Foreground="Black" />
+                                    <Button Name="kv" Content=""  FontFamily="segoe mdl2 assets" Click="kv_Click" Foreground="Black"  Margin="0 0 0 0"/>
+                                </StackPanel>
+
+
+
+                            </ListBoxItem>
+                            <ListBoxItem Name="listitemtwel_4" >
+                            </ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Name="txtShowDataOnClickOfListItems3" Text="Content yet to be displayed" Margin="10 800 20 20"></TextBlock>
+                </SplitView.Content>
+            </SplitView>
+
+
+        </Grid>
+    </ScrollViewer>
+</Page>
